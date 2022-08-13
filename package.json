@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1",
+    "twitter-api-sdk": "^1.1.0"
+  },
+  "name": "digitalchirp",
+  "version": "1.0.0",
+  "description": "Digital chirp plays notes based on tweets posted in real time.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TTalex",
+  "license": "MIT"
+}

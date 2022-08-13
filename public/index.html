@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Digital Chirp</title>
+        <script src="Tone.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div style="width: 100%; text-align:center">
+            <h1>Digital Chirp</h1>
+        </div>
+
+        <div class="tweet-wrap" style="margin: 0px auto 20px auto">
+            <p>Digital chirp plays notes based on tweets posted in real time.</p>
+            <p>It reads tweets and looks for the following content:</p>
+            <ul>
+                <li>Notes (<span style='color: red; font-weight: bold'>do</span>, <span style='color: red; font-weight: bold'>ré</span>, <span style='color: red; font-weight: bold'>mi</span>, <span style='color: red; font-weight: bold'>fa</span>, <span style='color: red; font-weight: bold'>sol</span>, <span style='color: red; font-weight: bold'>la</span>, <span style='color: red; font-weight: bold'>si</span>) to be played</li>
+                <li>Numbers (<span style='color: blue; font-weight: bold'>1</span> to <span style='color: blue; font-weight: bold'>7</span>) for the octave</li>
+                <li>The character <span style='color: green; font-weight: bold'>#</span> to decide if the note is sharp or not</li>
+                <li>The length of the tweet to decide how long the note is played</li>
+            </ul>
+            <p> If a tweet contains multiple matches, multiple notes are played.</p>
+            <p>Tweets are displayed in realtime, and elements considered are highlighted</p>
+        </div>
+        <div style="width: 100%; text-align:center">
+            <button id="twitterButton">Play</button>
+        </div>
+        <div id="content"></div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/index.js" charset="utf-8"></script>
+    </body>
+</html>
